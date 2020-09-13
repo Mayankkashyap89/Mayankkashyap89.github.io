@@ -1,0 +1,198 @@
+@import "./app/variables.scss";
+
+
+@media screen and (min-width: 300px) {
+}
+
+
+@media screen and (max-width: 575px) {
+    .navbar {
+        margin-right: 0px !important;
+        .navbar-nav {
+            margin-left: -10px;
+            margin-right: -10px;
+            flex-wrap: wrap;
+        }
+    }
+
+    // #content {
+    //     padding-top: 14%;
+    // }
+    
+    .footer {
+        color: rgb(228 228 227 / 90%) !important;
+        background: #27633f;
+    }
+
+    .social-icons {
+        right: 1rem;
+        ul li a {
+            font-size: 1.5rem;
+            line-height: 3rem;
+            height: 3rem;
+            width: 3rem;
+        }
+    }
+    
+    .navbar-brand{
+        max-width: 70% !important;
+        margin: 0;
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .navbar-brand{
+        max-width: 50% !important;
+    }
+
+    .jumbotron {
+        padding: 3rem 2rem !important;
+        margin-top: 24px;
+    }
+}
+
+@media (min-width: 650px) and (max-width: 767px) {
+    .navbar-brand{
+        max-width: 40% !important;
+    }    
+
+    .container{
+        max-width: 100% !important;
+    }
+
+    #content{
+        margin-bottom: 24px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    body{
+        font-size: 16px !important;
+    }
+
+    .container-fluid {
+        padding: 0px !important;
+    }
+
+    .navbar{
+        height: 120px !important;
+        .navbar-nav .nav-item .nav-link{
+            font-size: 14px !important;
+        }
+        #navbarNav1 .nav-link {
+            padding: 0.2rem 0px 0.2rem 0px !important;
+            margin: 0px 10px !important;
+        }
+    }
+
+    .location {
+        height: 300px !important;
+    }
+
+    .row{
+        margin: 0 !important;
+    }
+
+    .watermark-text {
+        top: 8px !important;
+        img{
+            width: 50% !important;
+            transform: translate(50%, 33%) !important;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    // .fixed-bottom {
+    //     position: inherit !important;
+    // }
+}
+
+
+@media screen and (max-width: 991px) {
+    .col-sm-6 {
+        flex: 0 0 100% !important;
+        max-width: 100% !important;
+    }
+
+    .location {
+        width: 100%;
+    }
+
+    .navbar{
+        align-items: flex-start !important;
+        // padding-right: 0 !important;
+        .navbar-nav .nav-item .nav-link{
+            margin: 0 !important;
+            padding-left: 0px !important;
+            font-size: 1rem;
+        }
+        #navbarNav1{  
+            width: 100%;
+            justify-content: normal !important;
+            margin-left: 0;
+            .nav-link{
+                padding: 0.2rem 6px 0.2rem 0px;
+            }
+        }
+        #navbarNav{
+            display: inline-block;
+            .dropdown{
+                position: absolute;
+                right: 0;
+                /* text-decoration: none; */
+                top: 10px;
+                list-style: none;
+                .nav-link{
+                    padding: 1rem !important;
+                    color: rgb(228 228 227 / 90%);
+                }
+            }
+        }
+    }
+
+    .hidden-sm{
+        visibility: hidden;
+        display: none !important;
+        opacity: 0;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .navbar-brand{
+        max-width: 30% !important;
+        margin: 0;
+    }
+
+    .hidden-md{
+        visibility: hidden;
+        display: none !important;
+        opacity: 0;
+    }
+    
+    #content {
+        min-height: 676px;
+    }
+    
+    .navbar .navbar-nav .nav-item .nav-link{
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+    
+    .navbar{        
+        .navbar-brand{
+            max-width: 44% !important;
+            margin: 0;
+            padding: 0 !important;
+        }
+        .navbar-nav .nav-item .nav-link{
+            padding-left: 10px !important;
+            padding-right: 10px !important;
+        }
+    }
+}
